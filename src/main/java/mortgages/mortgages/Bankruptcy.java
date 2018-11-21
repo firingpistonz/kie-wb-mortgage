@@ -30,6 +30,8 @@ public class Bankruptcy extends java.lang.Object
 
 	private float totalAmount;
 
+	private java.lang.Float totalAmount2;
+
 	public Bankruptcy() {
 	}
 
@@ -57,11 +59,21 @@ public class Bankruptcy extends java.lang.Object
 		this.totalAmount = totalAmount;
 	}
 
+	public java.lang.Float getTotalAmount2() {
+		return this.totalAmount2;
+	}
+
+	public void setTotalAmount2(java.lang.Float totalAmount2) {
+		this.totalAmount2 = totalAmount2;
+	}
+
 	public Bankruptcy(java.lang.Integer amountOwed,
-			java.lang.Integer yearOfOccurrence, float totalAmount) {
+			java.lang.Integer yearOfOccurrence, float totalAmount,
+			java.lang.Float totalAmount2) {
 		this.amountOwed = amountOwed;
 		this.yearOfOccurrence = yearOfOccurrence;
 		this.totalAmount = totalAmount;
+		this.totalAmount2 = totalAmount2;
 	}
 
 	public Bankruptcy(java.lang.Integer amountOwed,
